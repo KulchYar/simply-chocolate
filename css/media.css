@@ -1,0 +1,79 @@
+:root {
+    --text-color: #111111;
+    --bgr-color-2: #1E1823;
+    --bgr-color: #FAFAFA;
+    --second-color: #FD9222;
+    --text-color-2: #ffffff;
+    --text-transition: 300ms linear;
+}
+
+@media screen and (min-width: 375px;){
+.container {
+    max-width: 375px;
+}
+}
+    
+
+@media screen and (min-width:768px) {
+    .container {
+        max-width: 768px;
+        padding-left: 32px;
+            padding-right: 32px;
+    }
+/** ---------------------HEADER-TABLET----------------- */
+    .header-btn {
+        display: none;
+    }
+
+    .header-nav {
+display: flex;
+    }
+        .header-list {
+            display: flex;
+            gap: 24px;
+        }
+    
+        .header-item {}
+    
+        .header-link {
+            color: var(--text-color);
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 1.14;
+                letter-spacing: -0.02em;
+                transition: color var(--text-transition);
+        }
+
+        .header-link:hover, .header-link:focus {
+            color: var(--second-color);
+        }
+
+
+
+                .header-soc-list {
+                    display: flex;
+                    gap: 18px;
+                }
+
+                .header-soc-icon{
+                    transition: stroke var(--text-transition);
+                }
+
+                .header-soc-icon:hover, .header-soc-icon:focus {
+                    stroke: var(--second-color)
+                }
+}
+
+
+@media screen and (min-width: 1136px) {
+    .container {
+        max-width: 1136px;
+    }
+
+        /** ---------------------HEADER-DESKTOP----------------- */
+        .header-logo {
+                font-size: 18px;
+                line-height: 1.11;
+                
+        }
+}
